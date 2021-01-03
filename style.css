@@ -1,0 +1,151 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Google Fonts */
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    margin: 0px;
+    padding: 0px;
+}
+    textarea
+    {
+        padding: 1rem;
+        width: 40%;
+        display: block;
+        height: 50vh;
+        float: left;
+        margin: 1rem;
+    }
+    #output{
+        border: 1px solid black;
+        height: 50vh;
+        width: 40%;
+        margin: 1rem;
+        padding: 1rem;
+        float:right;
+        overflow: auto;
+    }
+
+.navbar{
+    width: 100%;
+    display: flex;
+    background: rgb(76, 0, 255);
+    transition: all 0.7s ease-in-out;
+    user-select: none!important;
+}
+
+.nav-list{
+    display: flex;
+    width: 100%;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 1.5em;
+    float: right;
+    z-index: 999999999;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    user-select: none!important;
+}
+
+.logo{
+    float: left;
+    padding: 18px 1.4em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttons{
+    position: absolute;
+    right: 0;
+    padding: 0.5em;
+    overflow: hidden;
+    
+}
+
+.btn{
+    padding: 0.7em;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+    border: 2.4px solid white!important;
+    border: none;
+    color: white;
+    font-size: 17px;
+    margin: 0.1rem 0.5rem;
+    overflow: hidden;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 880px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    body{
+        user-select: none!important;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-list li{
+        text-align: center;
+    }
+
+    .buttons{
+        position: relative;
+    }
+
+    .logo{
+        padding: 11px 1.2em;
+    }
+    .hamburger-menu-icon{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 0.8rem;
+    }
+
+    .navbar-height-responsive{
+        height: 60px;
+    }
+
+    .navbar-height-normal{
+        height: 27rem;
+    }
+}
+/* Media Queries */
+#btn-translate {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-left:55px;
+    margin-top: 15px;
+    border-color: blue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+    transition: all 150ms ease-in-out;
+  }
+ #btn-translate:hover{
+     color: blue;
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+  }
+  
